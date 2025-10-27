@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Haven</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3eee7;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background: #3e2723;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: #d7ccc8;
+    }
+
+    /* Header */
+    header {
+      background: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93") center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+
+    /* Coffee Section */
+    .coffee-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .coffee-section h2 {
+      margin-bottom: 20px;
+      color: #3e2723;
+    }
+    .coffee-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .coffee-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .coffee-card:hover {
+      transform: translateY(-5px);
+    }
+    .coffee-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .coffee-card h3 {
+      margin: 10px 0;
+      color: #5d4037;
+    }
+    .coffee-card p {
+      padding: 0 10px 15px;
+      font-size: 0.9em;
+      color: #6d4c41;
+    }
+
+    /* Footer */
+    footer {
+      background: #3e2723;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Coffee Menu</a></li>
+      <li><a href="#order">How to Order</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#feedback">Feedback</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header id="home">
+    <h1>☕ Coffee Haven</h1>
+    <p>Your daily dose of happiness in a cup</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="coffee-section">
+    <h2>About Us</h2>
+    <p>Welcome to Coffee Haven! We serve freshly brewed coffee with love and passion. Whether you like it hot, cold, or blended, we’ve got it all covered.</p>
+  </section>
+
+  <!-- Coffee Menu -->
+  <section id="menu" class="coffee-section">
+    <h2>Our Coffee Collection</h2>
+    <div class="coffee-container">
+
+      <!-- Coffee Card 1 -->
+      <div class="coffee-card">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>Strong, bold, and rich in flavor, our classic espresso shot will give you the perfect energy boost.</p>
+      </div>
+
+      <!-- Coffee Card 2 -->
+      <div class="coffee-card">
+        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772" alt="Cappuccino">
+        <h3>Cappuccino</h3>
+        <p>A creamy delight with a perfect balance of espresso, steamed milk, and frothy foam.</p>
+      </div>
+
+      <!-- Coffee Card 3 -->
+      <div class="coffee-card">
+        <img src="https://images.unsplash.com/photo-1523942839745-7848d4e6e9a4" alt="Latte">
+        <h3>Latte</h3>
+        <p>Smooth and milky with a touch of espresso, perfect for those who like a lighter coffee flavor.</p>
+      </div>
+
+      <!-- Coffee Card 4 -->
+      <div class="coffee-card">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Mocha">
+        <h3>Mocha</h3>
+        <p>A delicious blend of coffee and chocolate, topped with whipped cream for the perfect treat.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- How to Order -->
+  <section id="order" class="coffee-section">
+    <h2>How to Order</h2>
+    <p>Visit us at our café, call us at +91 98765 43210, or order online through our app.</p>
+  </section>
+
+  <!-- Location -->
+  <section id="location" class="coffee-section">
+    <h2>Our Location</h2>
+    <p>123 Coffee Street, Tirupati, Andhra Pradesh, India</p>
+  </section>
+
+  <!-- Feedback -->
+  <section id="feedback" class="coffee-section">
+    <h2>Give Us Feedback</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required><br><br>
+      <input type="email" placeholder="Your Email" required><br><br>
+      <textarea placeholder="Your Feedback" rows="4" required></textarea><br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="coffee-section">
+    <h2>Contact Us</h2>
+    <p>Email: coffeehaven@gmail.com | Phone: +91 98765 43210</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Coffee Haven | Designed with ☕ and ❤️</p>
+  </footer>
+
+</body>
+</html>
